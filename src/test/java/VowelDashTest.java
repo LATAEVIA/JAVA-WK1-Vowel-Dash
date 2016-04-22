@@ -9,15 +9,14 @@ public class VowelDashTest {
     String testString = "Vowel Dash gives an output!";
     assertEquals(testString, testVowelDash.replace(testString, testString, "Vowel Dash gives an output!"));
   }
+
+  @Test
+  public void isVowelDash_forReplaceOneLetter_NewString() {
+    VowelDash testVowelDash = new VowelDash( );
+    String testString = "Vowel Dash gives an output!";
+    assertEquals("V-w-l D-sh g-v-s -n --tp-t!", testVowelDash.replace(testString, "[AEIOUaeiou]", "-"));
+  }
 }
-
-
-//   @Test
-//   public void CheckString_ReplaceWordsAnywhere_NewString() {
-//     FindAndReplace testFindAndReplace = new FindAndReplace( );
-//     String testString = "cat in a cathedral";
-//     assertEquals("dog in a doghedral", testFindAndReplace.replace(testString, "cat", "dog"));
-//   }
 //
 //   @Test
 //   public void CheckString_ReplaceOnlyCompleteWords_NewString() {

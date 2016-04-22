@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VowelDashTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-22T16:58:44" hostname="epicodus-85.local" time="0.001">
+<testsuite name="VowelDashTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-22T17:22:43" hostname="epicodus-85.local" time="0.002">
   <properties/>
+  <testcase name="isVowelDash_forReplaceOneLetter_NewString" classname="VowelDashTest" time="0.001"/>
   <testcase name="isVowelDash_forGiveInputReceiveOutput_SameString" classname="VowelDashTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
