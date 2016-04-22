@@ -1,0 +1,10 @@
+<div class"jumbotron">
+  <h1>Guess Correctly?</h1>
+  <p>Check below to see if your guess matches.</p>
+</div>
+
+#if($isLeapYear.equal($guess))
+  <h3 class="well">$guess is CORRECT!</h3>
+#else
+  <h3 class="well">$guess is INCORRECT!</h3>
+#end

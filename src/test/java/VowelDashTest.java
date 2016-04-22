@@ -17,34 +17,3 @@ public class VowelDashTest {
     assertEquals("V-w-l D-sh g-v-s -n --tp-t!", testVowelDash.replace(testString, "[AEIOUaeiou]", "-"));
   }
 }
-//
-//   @Test
-//   public void CheckString_ReplaceOnlyCompleteWords_NewString() {
-//     FindAndReplace testFindAndReplace = new FindAndReplace( );
-//     assertEquals("dog in a cathedral", testFindAndReplace.replace(cat in a cathedral, "cat", "dog"));
-//
-//   @Test
-//   public void CheckString_ReplaceCapsCorrectly_NewString() {
-//     FindAndReplace testFindAndReplace = new FindAndReplace( );
-//     assertEquals("dog in al cathedral", testFindAndReplace.replace(cat in a cathedral, "cat", "dog"));
-//   }
-//
-//
-// @Test
-//  public void findReplace_changeAllInstanceOfOneWordToAnother_changedString() {
-//    FindAndReplace testFindAndReplace = new FindAndReplace();
-//    String userInput = "I went to sleep yesterday";
-//    assertEquals("I went to class yesterday", testFindAndReplace.findReplace(userInput, "sleep", "class"));
-//  }
-//  @Test
-//  public void findReplace_wontChangePartialWordMatches_changedString() {
-//    FindAndReplace testFindAndReplace = new FindAndReplace();
-//    String userInput = "I am walking my cat to the cathedral";
-//    assertEquals("I am walking my dog to the cathedral", testFindAndReplace.findReplace(userInput, "cat", "dog"));
-//  }
-//  @Test
-//  public void findReplace_willReplaceDifferentlyCapitalizedWords_changedString() {
-//    FindAndReplace testFindAndReplace = new FindAndReplace();
-//    String userInput = "I am walking my cat to the Park";
-//    assertEquals("I am walking my cat to the beach", testFindAndReplace.findReplace(userInput, "park", "beach"));
-//  }

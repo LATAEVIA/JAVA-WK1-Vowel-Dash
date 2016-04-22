@@ -35,7 +35,7 @@ public class VowelDash {
 //       return new ModelAndView(model, layout);
 //     }, new VelocityTemplateEngine());
 //   }
-//   public static String findReplace(String input, String toFind, String toReplace) {
+//   public static String findReplace(String input, String toFind, Strin g toReplace) {
 //     String[] phraseSplit = input.split(" ");
 //     String lowerCaseFind = toFind.toLowerCase();
 //     for ( Integer i = 0; i < phraseSplit.length; i++) {
