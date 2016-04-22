@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
 import spark.ModelAndView;
@@ -7,20 +7,35 @@ import static spark.Spark.*;
 
 public class VowelDash {
   public static void main(String[] args) {}
+    String layout = "templates/layout.vtl";
 
-  public String replace(String original, String find, String replace) {
-    return original.replaceAll(find, replace);
+      get("/", (request, response) -> {
+         Map<String, Object> model = new HashMap<String, Object>();
+         model.put("template", "templates/home.vtl");
+         return new ModelAndView(model, layout);
+       }, new VelocityTemplateEngine());
+
+      get("/result", (request, response) -> {
+         Map<String, Object> model = new HashMap<String, Object>();
+         model.put("template", "templates/results.vtl");
+
+         String input = request.queryParams("text");
+         String toFind = request.queryParams("toFind");
+         String toReplace = request.queryParams("toReplace");
+         String finished = findReplace(input, toFind, toReplace);
+
+         model.put("finished", finished);
+         return new ModelAndView(model, layout);
+       }, new VelocityTemplateEngine());
+     }
+
+  public static String replace(String original, String find, String replace) {
+    String dashResult = original.replaceAll(find, replace);
+    return dashResult;
   }
 }
 
-//   public static void main(String[] args) {
-//   String layout = "templates/layout.vtl";
-//
-//   get("/", (request, response) -> {
-//      Map<String, Object> model = new HashMap<String, Object>();
-//      model.put("template", "templates/home.vtl");
-//      return new ModelAndView(model, layout);
-//    }, new VelocityTemplateEngine());
+
 //
 //    get("/results", (request, response) -> {
 //       Map<String, Object> model = new HashMap<String, Object>();
