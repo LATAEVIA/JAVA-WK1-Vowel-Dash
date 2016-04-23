@@ -16,4 +16,10 @@ public class VowelDashTest {
     String testString = "Vowel Dash gives an output!";
     assertEquals("V-w-l D-sh g-v-s -n --tp-t!", testVowelDash.replace(testString, "[AEIOUaeiou]", "-"));
   }
+
+  @Test
+  public void isVowelDash_forMatchingInputs_true() {
+    VowelDash testVowelDash = new VowelDash( );
+    assertEquals(true, testVowelDash.findMatch("aString", "aString"));
+  }
 }

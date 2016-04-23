@@ -1,1 +1,21 @@
-<p>$output</p>
+<br>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title center-stuff">Can you guess the missing vowels?</h2>
+  </div>
+  <div class="panel-body center-stuff">
+    <h2>$dashedOutput</h2>
+  </div>
+</div>
+
+<form action='/check' method='post' class="centered text-center">
+  <h3>
+    <label for="Word Check">Type your best guess:</label>
+  </h3>
+
+  <div class="center-stuff">
+    <input name="inputGuess" type="text" class="center-stuff form-control"  placeholder="Solve here">
+    <br><br>
+    <button type="submit" class="btn btn-primary btn-lg">Check</button>
+  </div>
+</form>

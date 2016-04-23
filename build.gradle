@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "vowelDash"
 version = '1.0'
-mainClassName = "VowelDash"
+mainClassName = "App"
 
 repositories {
  mavenCentral()
