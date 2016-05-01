@@ -22,4 +22,12 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Create a word puzzle");
   }
+
+  @Test
+  public void isDashedForVowels() {
+    goTo("http://localhost:4567");
+    fill("#inputNoDashes").with("test");
+    submit(".btn");
+    assertThat(pageSource()).contains("t--t");
+  }
 }
