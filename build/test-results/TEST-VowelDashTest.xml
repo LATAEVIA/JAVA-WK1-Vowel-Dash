@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VowelDashTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-22T22:56:06" hostname="epicodus-85.local" time="0.001">
+<testsuite name="VowelDashTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-05-01T22:29:18" hostname="epicodus-74.local" time="0.001">
   <properties/>
   <testcase name="isVowelDash_forReplaceOneLetter_NewString" classname="VowelDashTest" time="0.001"/>
   <testcase name="isVowelDash_forGiveInputReceiveOutput_SameString" classname="VowelDashTest" time="0.0"/>

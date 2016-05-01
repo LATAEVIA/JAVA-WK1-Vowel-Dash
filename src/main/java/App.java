@@ -36,17 +36,14 @@ public class App {
       String output = "";
       VowelDash myVowelDash = new VowelDash();
 
-      model.put("inputGuess", inputSolution);
-      model.put("inputNoDashes", inputOriginal);
+      Boolean solutionGuess = myVowelDash.findMatch(inputOriginal, inputSolution);
+      if (solutionGuess.equals(true)){
+        output = String.format("'%s' is correct.", inputSolution);
+      } else {
+        output = String.format("'%s' is incorrect. '%s' was the correct answer.", inputSolution, inputOriginal);
+      }
 
-      // model.put("output", output);
-      //
-      // Boolean solutionGuess = myVowelDash.findMatch(inputOriginal, inputSolution);
-      // if (solutionGuess.equals(true)){
-      //   output = (inputSolution + " is correct");
-      // } else {
-      //   output = (inputSolution + " is incorrect. " +  inputOriginal + " was the correct answer.");
-      // }
+      model.put("output", output);
 
       model.put("template", "templates/check.vtl");
       checkArray.remove(0);
