@@ -30,4 +30,24 @@ public class AppTest extends FluentTest {
     submit(".btn");
     assertThat(pageSource()).contains("t-st");
   }
+
+  @Test
+  public void isCorrectGuess() {
+    goTo("http://localhost:4567");
+    fill("#inputNoDashes").with("test");
+    submit(".btn");
+    fill("#inputGuess").with("test");
+    submit(".btn");
+    assertThat(pageSource()).contains("'test' is correct.");
+  }
+
+  @Test
+  public void notCorrectGuess() {
+    goTo("http://localhost:4567");
+    fill("#inputNoDashes").with("test");
+    submit(".btn");
+    fill("#inputGuess").with("tests");
+    submit(".btn");
+    assertThat(pageSource()).contains("'tests' is incorrect.");
+  }
 }
