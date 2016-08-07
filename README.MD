@@ -1,7 +1,6 @@
 # _Vowel Dash_
 
-#### _Java application project built as a code review of competencies including using an instance of one class in the method of another class, Spark routes processing GET and POST requests/responses, creating objects from a custom class with a custom constructor, and creating & organizing
-object unit tests separate from integration tests., 04/22/2016_
+#### _Java application project built as a code review of competencies including using an instance of one class in the method of another class, Spark routes processing GET and POST requests/responses, creating objects from a custom class with a custom constructor, and creating & organizing object unit tests separate from integration tests., 04/22/2016_
 
 #### By _**LaTaevia**_
 
