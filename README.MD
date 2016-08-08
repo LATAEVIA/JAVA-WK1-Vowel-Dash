@@ -16,7 +16,7 @@ You will need the following properly installed on your computer.
 
 ## Setup/Installation Requirements
 
-* `git clone https://github.com/LATAEVIA/JAVA-WK1-Vowel-Dash_`
+* `git clone https://github.com/LATAEVIA/Vowel-Dash_`
 * Navigate into the new directory
 * `gradle build`
 
